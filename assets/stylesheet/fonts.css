@@ -1,0 +1,29 @@
+@font-face {
+	font-family: JosefinSlab_latin;
+	src: url('../fonts/JosefinSlab-VariableFont_wght.ttf');
+}
+
+@font-face {
+	font-family: LobsterRegular;
+	src: url('../fonts/Lobster-Regular.ttf');
+}
+
+@font-face {
+	font-family: MontaguSlab;
+	src: url('../fonts/MontaguSlab-VariableFont_opsz_wght.ttf');
+}
+
+@font-face {
+	font-family: Oregano;
+	src: url('../fonts/Oregano-Regular.ttf');
+}
+
+@font-face {
+	font-family: Quicksand;
+	src: url('../fonts/Quicksand-VariableFont_wght.ttf');
+}
+
+@font-face {
+	font-family: SourceSerifProRegular;
+	src: url('../fonts/SourceSerifPro-Regular.ttf');
+}

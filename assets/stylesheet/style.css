@@ -1,0 +1,182 @@
+@import "fonts.css";
+
+:root {
+	--logo-min-width : 20px;
+	--logo-width: 4vw;
+	--navbar-height: max(var(--logo-min-width), var(--logo-width));
+	--document-width: 98vw;
+	--document-height: 98vh;
+	--page-height: calc(
+		var(--document-height) - var(--navbar-height) - 1px
+	);
+	--bg-blur: blur(1px);
+}
+
+* {
+	color: white;
+}
+body {
+	margin: 0;
+}
+a {
+	color: #222;
+}
+
+
+.full {
+	height: 100%;
+}
+.blur {
+	background: rgba(255, 255, 255, 0.1);
+	backdrop-filter: var(--bg-blur);
+	-webkit-backdrop-filter: var(--bg-blur);
+	width: 100%;
+}
+
+#navbar {
+	position: fixed;
+	top: 0;
+	width: var(--document-width);
+	/* background-color: white; */
+	z-index: 10;
+}
+
+/* footer {
+	padding-top: 2em;
+} */
+
+#navbar .container {
+	align-items: baseline;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+#navbar #brand-logo {
+	min-width: var(--logo-min-width);
+	vertical-align: middle;
+	width: var(--logo-width);
+}
+
+#navbar a {
+	text-decoration: none;
+	white-space: nowrap;
+}
+
+#nav-links,
+#nav-auth {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+#nav-links,
+#nav-auth {
+	font-family: SourceSerifProRegular;
+}
+
+#nav-links>li,
+#nav-auth>a {
+	display: inline;
+	padding: 0 5px;
+}
+#nav-links>li:first-child,
+#nav-auth>a:first-child {
+	padding-left: 0;
+}
+#nav-links>li:last-child,
+#nav-auth>a:last-child {
+	padding-right: 0;
+}
+
+body>section { /* pages */
+	padding: var(--navbar-height) 0 0 0;
+	width: var(--document-width);
+	height: var(--page-height);
+}
+
+body>section>* {
+	z-index: 1;
+}
+
+body>section>.tile-bg {
+	background-clip: content-box;
+	/* background-size: var(--document-width) var(--page-height); */
+}
+body>section>.page-bg {
+	background-clip: content-box;
+	background-position: center;
+	background-repeat: no-repeat;
+	/* background-size: cover; */
+	background-size: var(--document-width) var(--page-height);
+}
+
+.title {
+	font-family: LobsterRegular;
+}
+
+body>section h1,
+#front-page p.title {
+	font-size: 3em;
+	padding-right: 20vw;
+	text-align: right;
+	white-space: nowrap;
+	margin-top: 0;
+}
+
+body, #navbar {
+	/* background-color: #dfffef; */
+}
+
+#front-page {
+/*
+Original artwork by [nickfz](https://pngtree.com/nickfz_14826052?type=1).
+*/
+}
+
+#front-page .title {
+	margin: 0;
+}
+
+#front-page .description-intro {
+	font-family: JosefinSlab_latin;
+	font-weight: 500;
+	font-size: 1.5em;
+	margin: 0;
+	padding-left: 5vw;
+	padding-right: 5vw;
+	text-align: right;
+	padding-right: 18vw;
+}
+
+#call-to-action {
+	font-family: MontaguSlab;
+	font-size: 2em;
+	padding-left: 5vw;
+	padding-right: 5vw;
+	text-align: center;
+}
+
+#why-us,
+.selling-point,
+#despre-noi p {
+	font-family: Quicksand;
+	font-size: 1.5em;
+	padding-left: 5vw;
+	padding-right: 5vw;
+}
+
+#why-us {
+	font-size: 2em;
+	font-weight: 500;
+	margin-bottom: 0;
+}
+.selling-point {
+	font-weight: 300;
+	margin: 0;
+}
+
+#despre-noi h1 {
+	font-family: Oregano;
+}
