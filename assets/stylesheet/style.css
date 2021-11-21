@@ -70,6 +70,7 @@ a {
 	margin: 0;
 	padding: 0;
 	text-align: center;
+	font-size: 1.5em;
 }
 
 #nav-links>li,
@@ -114,7 +115,7 @@ body>section>.page-bg {
 
 body>section h1,
 #front-page p.title {
-	font-size: 3em;
+	font-size: 3.5em;
 	padding-right: 20vw;
 	text-align: right;
 	white-space: nowrap;
@@ -138,7 +139,7 @@ Original artwork by [nickfz](https://pngtree.com/nickfz_14826052?type=1).
 #front-page .description-intro {
 	font-family: JosefinSlab_latin;
 	font-weight: 500;
-	font-size: 1.5em;
+	font-size: 2em;
 	margin: 0;
 	padding-left: 5vw;
 	padding-right: 5vw;
@@ -148,7 +149,7 @@ Original artwork by [nickfz](https://pngtree.com/nickfz_14826052?type=1).
 
 #call-to-action {
 	font-family: MontaguSlab;
-	font-size: 2em;
+	font-size: 3.5em;
 	padding-left: 5vw;
 	padding-right: 5vw;
 	text-align: center;
@@ -158,13 +159,13 @@ Original artwork by [nickfz](https://pngtree.com/nickfz_14826052?type=1).
 .selling-point,
 #despre-noi p {
 	font-family: Quicksand;
-	font-size: 1.5em;
+	font-size: 2.5em;
 	padding-left: 5vw;
 	padding-right: 5vw;
 }
 
 #why-us {
-	font-size: 2em;
+	font-size: 3em;
 	font-weight: 500;
 	margin-bottom: 0;
 }
