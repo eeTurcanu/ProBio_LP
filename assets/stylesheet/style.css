@@ -10,6 +10,10 @@
 		var(--document-height) - var(--navbar-height) - 1px
 	);
 	--bg-blur: blur(1px);
+	--title-padding: 25vw;
+	--description-intro-padding: calc(
+		var(--title-padding) - 2vw
+	);
 }
 
 * {
@@ -99,7 +103,7 @@ body>section>* {
 body>section h1,
 #front-page p.title {
 	font-size: 3.5em;
-	padding-right: 20vw;
+	padding-right: var(--title-padding);
 	text-align: right;
 	white-space: nowrap;
 	margin-top: 0;
@@ -123,7 +127,7 @@ Original artwork by [nickfz](https://pngtree.com/nickfz_14826052?type=1).
 	padding-left: 5vw;
 	padding-right: 5vw;
 	text-align: right;
-	padding-right: 18vw;
+	padding-right: var(--description-intro-padding);
 }
 
 #call-to-action {
