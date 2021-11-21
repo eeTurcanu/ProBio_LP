@@ -26,17 +26,6 @@ a {
 	color: #222;
 }
 
-
-.full {
-	height: 100%;
-}
-.blur {
-	background: rgba(255, 255, 255, 0.1);
-	backdrop-filter: var(--bg-blur);
-	-webkit-backdrop-filter: var(--bg-blur);
-	width: 100%;
-}
-
 #navbar {
 	position: fixed;
 	top: 0;
