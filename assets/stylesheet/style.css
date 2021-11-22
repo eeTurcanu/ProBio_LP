@@ -150,3 +150,29 @@ body>section h1,
 body>section h1 {
 	font-family: Oregano;
 }
+
+@media only screen and (max-width: 739px) {
+	body>section {
+		padding-top: calc(4 * var(--navbar-height));
+	}
+
+	body>section h1,
+	#front-page p.title {
+		padding-right: 0;
+		text-align: center;
+	}
+
+	#front-page .description-intro {
+		font-size: 1.75em;
+	}
+
+	#call-to-action {
+		font-size: 1.3em;
+		text-align: left;
+	}
+
+	#why-us,
+	.selling-point {
+		font-size: 1.5em;
+	}
+}
