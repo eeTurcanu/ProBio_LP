@@ -27,6 +27,7 @@
 					<li><a href="#produse">Produse</a></li>
 					<li><a href="#producatori">Producători</a></li>
 					<li><a href="#despre-noi">Despre noi</a></li>
+					<li><a href="#noutati">Noutati</a></li>
 					<li><a href="#contact">Contact</a></li>
 				</ul>
 
@@ -60,6 +61,17 @@
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent gravida vel tellus ac mattis. Pellentesque ultrices finibus ligula, id aliquet velit suscipit a. Proin mattis ultricies placerat. Donec sit amet urna ut velit posuere fermentum. Cras scelerisque arcu tortor, ut semper ante venenatis at. Nullam vel porttitor quam, hendrerit aliquam nulla. Donec placerat congue tellus vestibulum porta. Donec leo eros, molestie nec gravida maximus, pretium ac magna. Ut ac felis venenatis, gravida metus sit amet, iaculis felis. Nam aliquam lacus quis nulla congue, et efficitur dolor feugiat.</p>
 		</section>
 
+		<section id="noutati">
+			<h1>Noutati</h1>
+			<p>Daca doriti sa fiti la curent cu noutatile despre ProBio, abonati-va la newsletter completand forumlarul de mai jos</p>
+			<form id="newsletter-form" action="https://formspree.io/f/mzbobbqw" method="POST">
+				<label>Email:</label>
+				<input type="email" name="email" />
+				<button id="newsletter-form-button">Submit</button>
+				<p id="newsletter-form-status"></p>
+			</form>
+		</section>
+
 		<!-- <footer id="contact">
 			<p>date contact</p>
 			<p><a href="mailto:name@domain">name@domain</a></p>
@@ -68,5 +80,27 @@
 		<script src="scripts/lazyLoadBackground.js"></script>
 		<script src="scripts/showNavbarOnScroll.js"></script>
 		<script src="scripts/index.js"></script>
+		<script>
+			var form = document.getElementById("newsletter-form");
+
+			async function handleSubmit(event) {
+			  event.preventDefault();
+			  var status = document.getElementById("newsletter-form-status");
+			  var data = new FormData(event.target);
+			  fetch(event.target.action, {
+				method: form.method,
+				body: data,
+				headers: {
+					'Accept': 'application/json'
+				}
+			  }).then(response => {
+				status.innerHTML = "V-ati abonat cu succes!";
+				form.reset()
+			  }).catch(error => {
+				status.innerHTML = "A aparut o problema la abonare. Va rugam sa incercati din nou."
+			  });
+			}
+			form.addEventListener("submit", handleSubmit)
+		</script>
 	</body>
 </html>
