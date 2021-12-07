@@ -147,6 +147,19 @@ body>section h1,
 	font-size: 1.5em;
 }
 
+#noutati p {
+	font-family: Quicksand;
+	padding-left: 5vw;
+	padding-right: 5vw;
+}
+#noutati label {
+	padding-left: 5vw;
+}
+#noutati input {
+	padding-right: 5vw;
+	color: black !important;
+}
+
 body>section h1 {
 	font-family: Oregano;
 }
