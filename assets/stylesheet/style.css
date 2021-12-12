@@ -147,6 +147,29 @@ body>section h1,
 	font-size: 1.5em;
 }
 
+.grid {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.grid>div {
+	min-width: 25%;
+	max-width: 24vw;
+	flex: 1 1 auto;
+	justify-content: center;
+}
+
+.grid.max-8>div:nth-child(n+9) {
+	display: none;
+}
+
+.grid>div>img {
+	max-height: 30vh;
+	max-width: 24vw;
+	height: auto;
+}
+
 #noutati p {
 	font-family: Quicksand;
 	padding-left: 5vw;
