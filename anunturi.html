@@ -48,6 +48,22 @@
 			<div id="div-produse" class="grid">
 			</div>
 		</section>
+		<section id="anunt-nou">
+			<h1>Anunt nou</h1>
+			<label for="title">Titlu anunt</label>
+			<input type="text" id="title"><br>
+			<label for="photo">Link catre poza</label>
+			<input type="text" id="photo"><br>
+			<label for="description">Descriere anunt</label>
+			<textarea type="text" id="description" rows="10" cols="70"></textarea><br>
+			<label>Categoria anuntului</label>
+			<select id="category" name="category">
+				<option value="legumes" selected>Legume</option>
+				<option value="fruits">Fructe</option>
+				<option value="dairy">Produse Lactate</option>
+			</select><br>
+			<button id="create-listing-btn" onclick="create_listing();">Creeaza anunt</button>
+		</section>
 
 
 		<script src="scripts/lazyLoadBackground.js"></script>

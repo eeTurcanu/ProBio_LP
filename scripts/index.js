@@ -117,3 +117,22 @@ function search() {
         change_category(category);
     }
 }
+
+function create_listing() {
+    var listings = JSON.parse(sessionStorage.getItem("listings"));
+
+    var name = document.getElementById("title").value;
+    var photo_src = document.getElementById("photo").value;
+    var description = document.getElementById("description").value;
+    var category = document.getElementById("category").value;
+
+    listings.push({
+        'id': listings.length,
+        'name': name,
+        'src': photo_src,
+        'description': description,
+        'category': category,
+    })
+    modify_listings(listings);
+    update_listings_container();
+}

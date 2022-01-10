@@ -249,3 +249,47 @@ button.remove-listing {
 	color: black;
 	border-radius:25px;
 }
+input {
+	color: black;
+}
+select {
+	color: black;
+}
+option {
+	color: black;
+}
+#create-listing-btn {
+	color: black;
+}
+input#title {
+	width: 240px;
+	margin-bottom: 20px;
+	margin-left:55px;
+}
+input#photo {
+	width: 240px;
+	margin-bottom: 20px;
+	margin-left:26px;
+}
+textarea#description {
+	width: 240px;
+	margin-bottom: 20px;
+	vertical-align: top;
+	color:black;
+	margin-left:26px;
+}
+label {
+	align-content: center;
+	margin-left: 20px;
+	margin-right: 100px;
+}
+#create-listing-btn {
+	margin-top:20px;
+	margin-left: 20px;
+}
+section#anunt-nou {
+	margin-top:200px;
+}
+.product {
+	margin-top: 30px;
+}
