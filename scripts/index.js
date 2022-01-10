@@ -57,3 +57,63 @@ function remove_listing(listing_id) {
         }
     }
 }
+
+function change_category(category) {
+    sessionStorage.setItem('category', category);
+    var container = document.getElementById("produse-div");
+    container.innerHTML = "";
+    var listings = JSON.parse(sessionStorage.getItem("listings"));
+    for (i = 0; i < listings.length; i++) {
+        if (listings[i].category == category) {
+            var product = document.createElement("div");
+            product.classList.add("product");
+            product.id = i;
+
+            var img = document.createElement("img");
+            img.src = listings[i].src;
+
+            var div = document.createElement("div");
+            div.innerHTML = listings[i].name;
+
+            product.append(img);
+            product.append(div);
+            container.append(product);
+        }
+    }
+    if (container.innerHTML.length == 0) {
+        container.innerHTML = "Nu exista anunturi pentru aceasta categorie la momentul de fata."
+    }
+
+}
+
+function search() {
+    var value = document.getElementById("search-bar").value;
+    var category = sessionStorage.getItem('category');
+    if (value.length > 0) {
+        var container = document.getElementById("produse-div");
+        container.innerHTML = "";
+        var listings = JSON.parse(sessionStorage.getItem("listings"));
+        for (i = 0; i < listings.length; i++) {
+            if (listings[i].category == category && listings[i].name.toLowerCase().includes(value.toLowerCase())) {
+                var product = document.createElement("div");
+                product.classList.add("product");
+                product.id = i;
+
+                var img = document.createElement("img");
+                img.src = listings[i].src;
+
+                var div = document.createElement("div");
+                div.innerHTML = listings[i].name;
+
+                product.append(img);
+                product.append(div);
+                container.append(product);
+            }
+        }
+        if (container.innerHTML.length == 0) {
+            container.innerHTML = "Nu exista anunturi care sa se potriveasca cu criteriile de cautare."
+        }
+    } else {
+        change_category(category);
+    }
+}

@@ -167,7 +167,9 @@ body>section h1,
 .grid>div>img {
 	max-height: 30vh;
 	max-width: 24vw;
-	height: auto;
+	/* height: auto; */
+	height: 240px;
+	width: 240px;
 }
 
 #noutati p {
@@ -223,3 +225,27 @@ button.remove-listing {
 	cursor:pointer;
 	border: none;
   }
+
+.categorii {
+	transition: transform .15s;
+}
+.categorii.legumes:hover {
+	transform: scale(1.15); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+.categorii.fruits:hover {
+	transform: scale(1.15); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+.categorii.dairy:hover {
+	transform: scale(1.15); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+.categorii>div {
+	margin-bottom: 50px;
+}
+#search-bar {
+	margin-bottom: 50px;
+	margin-left:25%;
+	width: 50%;
+	font-size: larger;
+	color: black;
+	border-radius:25px;
+}
