@@ -2,13 +2,13 @@ function start() {
     if (sessionStorage.getItem("setup") === null) {
         var listings =  [
                 {"id":0, "name":"Ardei gras roșu", "category":"legumes", "src":"assets/images/products/ardei-gras-rosu.png"},
-                {"id":1, "name":"Cartofi albi noi", "src":"assets/images/products/cartofi-albi-noi.png"},
-                {"id":2, "name":"Ceapă albă", "src":"assets/images/products/ceapa-alba.png"},
-                {"id":3, "name":"Ceapă verde", "src":"assets/images/products/ceapa-verde.png"},
-                {"id":4, "name":"Dovlecei", "src":"assets/images/products/dovlecei.png"},
-                {"id":5, "name":"Morcovi", "src":"assets/images/products/morcovi.png"},
-                {"id":6, "name":"Ridichi rosii", "src":"assets/images/products/ridichi-rosii.png"},
-                {"id":7, "name":"Usturoi", "src":"assets/images/products/usturoi.png"},
+                {"id":1, "name":"Cartofi albi noi", "category":"legumes", "src":"assets/images/products/cartofi-albi-noi.png"},
+                {"id":2, "name":"Ceapă albă", "category":"legumes", "src":"assets/images/products/ceapa-alba.png"},
+                {"id":3, "name":"Ceapă verde", "category":"legumes", "src":"assets/images/products/ceapa-verde.png"},
+                {"id":4, "name":"Dovlecei", "category":"legumes", "src":"assets/images/products/dovlecei.png"},
+                {"id":5, "name":"Morcovi", "category":"legumes", "src":"assets/images/products/morcovi.png"},
+                {"id":6, "name":"Ridichi rosii", "category":"legumes", "src":"assets/images/products/ridichi-rosii.png"},
+                {"id":7, "name":"Usturoi", "category":"legumes", "src":"assets/images/products/usturoi.png"},
             ];
         listings = JSON.stringify(listings);
         sessionStorage.setItem("listings", listings);
